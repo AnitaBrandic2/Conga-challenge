@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title={product.ProductName__c} class="product-detail">
+        <div class="slds-var-p-horizontal_small ">
+			<div class="slds-media">
+				<div class="slds-media__figure">
+                    <div class="slds-media__body" >
+                        <img src="" alt="Product"/>
+                        <p class="slds-var-m-bottom_xx-small">Product name: {product.ProductName__c}</p>
+                        <p class="slds-var-m-bottom_xx-small">Description: {product.Description__c}</p>
+                        <div class="detailDisplay" >
+                            <br/>
+                            <lightning-button label="Details" onclick={selectProduct}> </lightning-button>
+                            <br/>
+                            <lightning-button label="Price Compare" > </lightning-button>
+                            <br/>
+                            <lightning-button label="Buy" onclick={selectProduct1}> </lightning-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </lightning-card>
+</template>

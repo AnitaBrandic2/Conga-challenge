@@ -1,0 +1,11 @@
+<template>
+    <div class="container">
+            <c-details product={product} onproductselect1={getProduct}> </c-details>
+        <template if:true={areDetailsVisible}>
+            <lightning-card title={product.ProductName__c}>
+                <p class="slds-var-m-bottom_xx-small">Product name: {productName}</p>
+                <p class="slds-var-m-bottom_xx-small">Description: {productDesc}</p>
+            </lightning-card>
+        </template>
+    </div> 
+</template>

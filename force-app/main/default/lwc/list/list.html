@@ -1,0 +1,9 @@
+<template>
+    <div class="container">
+        <template for:each={products} for:item="product">
+            <lightning-layout-item key={product.Id}>
+            <c-details product={product} onproductselect={handleProductView}> </c-details>
+        </lightning-layout-item>
+        </template>
+    </div> 
+</template>
